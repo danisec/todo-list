@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assetes/style/style.css" />
+    <title>Todo List</title>
+  </head>
+  <body class="bg-blue-100/30">
+    <div
+      class="mx-2 my-8 w-full rounded-lg bg-white md:m-auto md:my-8 md:w-10/12 lg:w-8/12 xl:w-8/12"
+    >
+      <main class="app px-4 py-8">
+        <section class="greeting">
+          <div class="flex">
+            <h2
+              class="title w-28 text-lg font-semibold sx:w-36 xs:w-32 ms:w-28"
+            >
+              What's up,
+            </h2>
+            <input
+              type="text"
+              id="name"
+              class="w-full rounded-lg bg-white px-2.5 py-[2px] text-lg font-semibold text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+              placeholder="Name here"
+            />
+          </div>
+        </section>
+
+        <section class="create-todo mt-8">
+          <h3 class="uppercase tracking-widest text-blue-500">CREATE A TODO</h3>
+          <form id="new-todo-form">
+            <h4 class="mt-2 pb-4 text-sm">What's on your todo list?</h4>
+            <input
+              type="text"
+              name="content"
+              id="content"
+              class="w-full rounded-lg border border-gray-500 bg-white px-2.5 py-4 text-base text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+              placeholder="e.g. make a video"
+              required
+            />
+            <h4 class="mt-6 text-sm">Pick a category</h4>
+            <div class="options m-auto mt-4 flex justify-center gap-4">
+              <label
+                class="hover:translate-1 rounded-lg bg-blue-100/50 p-10 shadow-md shadow-blue-100/50 duration-300 hover:scale-105"
+              >
+                <input
+                  type="radio"
+                  name="category"
+                  id="category1"
+                  class="mx-auto flex h-4 w-4 justify-center border-blue-300 bg-blue-100 text-blue-600 accent-blue-500 focus:ring-blue-500"
+                  value="business"
+                  required
+                />
+                <span class="bubble business"></span>
+                <div class="pt-2 font-medium tracking-wider text-gray-900">
+                  Business
+                </div>
+              </label>
+
+              <label
+                class="hover:translate-1 rounded-lg bg-red-100/50 p-10 shadow-md shadow-red-100/50 duration-300 hover:scale-105"
+              >
+                <input
+                  type="radio"
+                  name="category"
+                  id="category2"
+                  class="mx-auto flex h-4 w-4 justify-center border-gray-300 bg-gray-100 text-blue-600 accent-red-500 focus:ring-blue-500"
+                  value="personal"
+                  required
+                />
+                <span class="bubble personal"></span>
+                <div class="pt-2 font-medium tracking-wider text-gray-900">
+                  Personal
+                </div>
+              </label>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="button-primary hover:scale-101 mt-6 mr-2 mb-2 w-full duration-300 hover:-translate-y-1 hover:bg-blue-600"
+              >
+                Add Todo
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="todo-list mt-8">
+          <h3 class="uppercase tracking-widest text-blue-500">TODO LIST</h3>
+          <div
+            class="list mt-4 rounded-md bg-emerald-100/20"
+            id="todo-list"
+          ></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./assetes/js/script.js"></script>
+  </body>
+</html>

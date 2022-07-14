@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button-primary {
+        @apply items-center rounded-md bg-primary-blue py-3 px-6 font-semibold text-white shadow-2xl shadow-primary-blue drop-shadow-3xl;
+    }
+
+    .todo-item {
+        @apply grid grid-flow-col gap-2 p-4 pb-4 border-b-8 border-white;
+    }
+    .actions {
+        @apply grid grid-flow-col;
+    }
+    
+    input[type='checkbox'] {
+        @apply mt-2 accent-blue-500;
+    }
+
+}

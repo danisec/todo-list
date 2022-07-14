@@ -1,0 +1,17 @@
+{
+  "name": "learn-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/assetes/style/style.css --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
+    "tailwindcss": "^3.1.6"
+  }
+}
